@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combo | Signup Page</title>
+</head>
+
+<style>
+
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .main{
+        margin-top: 7em;
+    }
+    .form_body{
+        width: 400px;
+        background:rgb(20, 121, 108);
+        margin: auto;
+        padding:0.5em 0;
+        border-radius: 20px;
+        box-shadow: 0 0 5px black;
+    }
+    form, .form_title{
+        text-align: center;
+    }
+    .form_title{
+        font: bold 30px calibri;
+        color: white;
+        margin:0.5em 0em;
+        text-shadow: 0 0 2px black;
+    }
+    input{
+        width: 300px;
+        font: 18px calibri;
+        padding:0.3em 0.4em;
+        margin-bottom:0.4em;
+    }
+    .submit_class input {
+        width:320px;
+        font-weight: bold;
+        background: rgb(255, 218, 150);
+        cursor: pointer;
+    }
+    .submit_class input:hover{
+        background:rgb(255, 255, 178);
+        color:black;
+
+    }
+    .foot_bar{
+        margin:1em 0;
+        font:16px arial;
+    }
+    .foot_bar span{
+        color:rgb(255, 255, 178);
+        font-weight: bold;
+    }
+    .foot_bar a{
+        color:white;
+        text-decoration: none;
+    }
+
+</style>
+
+
+<body>
+
+    <div class="main">
+        <div class="form_body">
+            <div class="form_title">Signup</div>
+            <form>
+                <div>
+                    <input type="text" placeholder="Full Name">
+                </div>
+                <div>
+                    <input type="text" placeholder="Username">
+                </div>
+                <div>
+                    <input type="text" placeholder="Email">
+                </div>
+                <div>
+                    <input type="number" placeholder="Phone Number">
+                </div>
+                <div>
+                    <input type="password" placeholder="Password">
+                </div>
+                <div>
+                    <input type="password" placeholder="Confirm Password">
+                </div>
+                <div class="submit_class">
+                    <input type="submit" value="Signup Now">
+                </div>
+
+                <div class="foot_bar"> 
+                    <span>Already a user?</span>
+                    <a href="login.html">Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
