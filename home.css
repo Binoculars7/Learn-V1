@@ -1,0 +1,29 @@
+body{
+    padding:0;
+    margin:0;
+}
+.main{
+    background: navy;
+    color:white;
+    padding: 2em 3em;
+}
+.menu_list a{
+    text-decoration: none;
+   
+    padding:0.5em 1em;
+}
+.menu_title{
+    margin-right: 40em;
+    color: white;
+    font:bold 20px arial; 
+}
+.others{
+    color:white;
+    font:15px arial;
+}
+.menu_signup{
+    background: white;
+    color:black;
+    border-radius: 10px;
+    font:15px arial;
+}
