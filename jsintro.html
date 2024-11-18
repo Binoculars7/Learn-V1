@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsIntro | Home</title>
+</head>
+
+<style>
+    body{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        font:20px arial;
+    }
+    form {
+        margin-top: 2em;
+    }
+    .input-field{
+        margin-top: 0.5em;
+    }
+    .input-field input{
+        width: 300px;
+        height: 30px;
+        padding-left: 1em;
+    }
+    .form-title{
+        font-weight: bold;
+        font-size: 23px;
+    }
+</style>
+<body>
+
+
+<br><br>
+        <div class="main">
+        <div class="form-title">
+            Simple Addition 
+        </div>
+            <form id="addForm">
+                <div class="input-field">
+                    <input type="number" placeholder="Enter first number" id="num1">
+                </div>
+                <div class="input-field">
+                    <input type="number" placeholder="Enter second number" id="num2">
+                </div>
+                <div class="input-field">
+                    <input type="submit" id="submit" onclick="toCalculate()">
+                </div>
+                <br>
+                <div class="ans">
+                    The answer is: <span id="answer"></span>
+                </div>
+            </form>
+
+        </div>
+
+
+</body>
+
+
+<script>
+
+    function toCalculate(){
+
+        
+        const num1 = parseFloat(document.getElementById('num1').value);
+        const num2 = parseFloat(document.getElementById('num2').value);
+        
+        if (!num1 && !num2) {
+            alert('You did not input a number');
+        }else{
+
+            document.getElementById('addForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevents the default form submission behavior
+            const result = num1 + num2;
+            document.getElementById('answer').textContent = result;
+        });
+
+        }
+            
+
+    }
+    
+</script>
+
+
+</html>

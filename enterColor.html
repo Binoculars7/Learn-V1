@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <form action="" id="colorForm">
+            <input type="text" placeholder="Enter a color" id="color">
+            <input type="submit" id="submit" onclick="toColor()">
+        </form>
+        <br>    
+
+    <div id="shape" style="width: 300px; height: 300px; border: 1px solid black;">
+
+    </div>
+
+
+    <script>
+        document.getElementById('colorForm').addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent form submission
+            var color = document.getElementById('color').value;
+            var shape = document.getElementById('shape');
+            shape.style.background = color; // Change shape background color
+            shape.style.width = '100px';
+            shape.style.height = '100px';
+        });
+    </script>
+
+</body>
+</html>

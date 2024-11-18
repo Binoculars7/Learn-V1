@@ -1,0 +1,149 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('doctor.jpg');
+      background-size: cover; /* Ensure the image covers the entire background */
+      background-position: center; /* Center the background image */
+      background-repeat: no-repeat; /* Avoid repeating the image */
+      height: 100vh; /* Full viewport height */
+      margin: 0; /* Remove default margin */
+   }
+
+/* Header */
+.header {
+    background-color: #f4f4f4;
+    padding: 10px 0;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.navbar .logo span {
+    color: #333;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    text-align: left;
+    background-image: url('doctor.jpg');
+    background-repeat:  no-repeat;
+    background-size: cover;
+    height: 550px;
+}
+
+.hero .hero-text {
+    max-width: 50%;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.hero p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.hero-buttons a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.btn-secondary {
+    border: 2px solid #007BFF;
+    color: #007BFF;
+}
+
+/* Hero Image */
+.hero-image img {
+    max-width: 400px;
+    height: auto;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
