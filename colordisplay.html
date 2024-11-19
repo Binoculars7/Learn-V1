@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Display</title>
+</head>
+<style>
+    body{
+        margin:0; padding:0;
+        text-align: center;
+        background: rgb(196, 234, 249);
+    }
+    .input-field input{
+        width: 300px;
+        height: 30px;
+        padding-left: 1em;
+        margin-bottom: 0.5em;
+    }
+
+    .input-field button{
+        width: 300px;
+        height: 30px;
+        padding-left: 1em;
+        margin-bottom: 0.5em;
+    }
+    .form-title{
+        font:bold 25px arial;
+        margin: 3em 0 1em 0;
+    }
+    #shape{
+        margin-top: 2em;
+        width: 300px; height: 300px;
+        border: 1px solid grey;
+        text-align: center;
+        margin: auto;
+    }
+</style>
+<body>
+
+
+<form action="">
+    <div class="form-title">Display a Color</div>
+    <div class="input-field">
+        <input type="text" placeholder="Enter a color" id="color">
+    </div>
+    <div class="input-field">
+        <button type="button" id="submit" onclick="colorDisplay()">Show this color</button>
+    </div>
+</form>
+
+<div id="shape">
+
+</div>
+    
+
+<script>
+
+
+function colorDisplay(){
+
+    const color = document.getElementById('color').value;
+    const shape = document.getElementById('shape');
+
+    if(!color){
+        alert('No color found!')
+    }else{
+        shape.style.background = color;
+    }
+    
+    
+}
+</script>
+
+</body>
+</html>
