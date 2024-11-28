@@ -7,20 +7,8 @@
 </head>
 <body>
 
-
-
-    
     <?php 
-    echo '<h1>New Website</h1>';
-    echo "<div style='background:red; color:white;'>New Project</div>";
 
-    $x = 10;
-    
-    $y = 4;
-
-    $ans = $x + $y;
-
-    echo $ans;
 
 
     ?>
